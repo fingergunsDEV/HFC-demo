@@ -1,0 +1,691 @@
+/* Material Design 3 Inspired Base Styles & Color Palette */
+:root {
+  /* --- Generic Theme Variables (Defaults to HFC) --- */
+  --theme-primary-light: var(--hfc-primary-light);
+  --theme-on-primary-light: var(--hfc-on-primary-light);
+  --theme-primary-container-light: var(--hfc-primary-container-light);
+  --theme-on-primary-container-light: var(--hfc-on-primary-container-light);
+  --theme-secondary-light: var(--hfc-secondary-light);
+  --theme-on-secondary-light: var(--hfc-on-secondary-light);
+  --theme-secondary-container-light: var(--hfc-secondary-container-light);
+  --theme-on-secondary-container-light: var(--hfc-on-secondary-container-light);
+  --theme-tertiary-light: var(--hfc-tertiary-light);
+  --theme-on-tertiary-light: var(--hfc-on-tertiary-light);
+  --theme-tertiary-container-light: var(--hfc-tertiary-container-light);
+  --theme-on-tertiary-container-light: var(--hfc-on-tertiary-container-light);
+  --theme-error-light: var(--hfc-error-light);
+  --theme-on-error-light: var(--hfc-on-error-light);
+  --theme-error-container-light: var(--hfc-error-container-light);
+  --theme-on-error-container-light: var(--hfc-on-error-container-light);
+  --theme-background-light: var(--hfc-background-light);
+  --theme-on-background-light: var(--hfc-on-background-light);
+  --theme-surface-light: var(--hfc-surface-light);
+  --theme-on-surface-light: var(--hfc-on-surface-light);
+  --theme-surface-variant-light: var(--hfc-surface-variant-light);
+  --theme-on-surface-variant-light: var(--hfc-on-surface-variant-light);
+  --theme-outline-light: var(--hfc-outline-light);
+  --theme-surface-container-highest-light: var(--hfc-surface-container-highest-light);
+  --theme-surface-container-high-light: var(--hfc-surface-container-high-light);
+  --theme-surface-container-light: var(--hfc-surface-container-light);
+  --theme-surface-container-low-light: var(--hfc-surface-container-low-light);
+  --theme-surface-container-lowest-light: var(--hfc-surface-container-lowest-light);
+
+  /* --- Default/HomeFranchise Theme --- */
+  --hfc-primary-light: #0061a4;
+  --hfc-on-primary-light: #ffffff;
+  --hfc-primary-container-light: #d1e4ff;
+  --hfc-on-primary-container-light: #001d36;
+  --hfc-secondary-light: #535f70;
+  --hfc-on-secondary-light: #ffffff;
+  --hfc-secondary-container-light: #d7e3f7;
+  --hfc-on-secondary-container-light: #101c2b;
+  --hfc-tertiary-light: #6b5778;
+  --hfc-on-tertiary-light: #ffffff;
+  --hfc-tertiary-container-light: #f2daff;
+  --hfc-on-tertiary-container-light: #251431;
+  --hfc-error-light: #ba1a1a;
+  --hfc-on-error-light: #ffffff;
+  --hfc-error-container-light: #ffdad6;
+  --hfc-on-error-container-light: #410002;
+  --hfc-background-light: #fefcff;
+  --hfc-on-background-light: #1a1c1e;
+  --hfc-surface-light: #fefcff;
+  --hfc-on-surface-light: #1a1c1e;
+  --hfc-surface-variant-light: #dfe3eb;
+  --hfc-on-surface-variant-light: #43474e;
+  --hfc-outline-light: #73777f;
+  --hfc-surface-container-highest-light: #e1e2e6;
+  --hfc-surface-container-high-light: #e7e8ec;
+  --hfc-surface-container-light: #edeeef;
+  --hfc-surface-container-low-light: #f2f3f7;
+  --hfc-surface-container-lowest-light: #ffffff;
+
+  /* --- AdvantaClean Theme --- */
+  --advantaclean-primary-light: #006971;
+  --advantaclean-on-primary-light: #ffffff;
+  --advantaclean-primary-container-light: #97f0ff;
+  --advantaclean-on-primary-container-light: #002023;
+  --advantaclean-secondary-light: #4a6365;
+  --advantaclean-on-secondary-light: #ffffff;
+  --advantaclean-secondary-container-light: #cde8ea;
+  --advantaclean-on-secondary-container-light: #051f22;
+  --advantaclean-tertiary-light: #535e7d;
+  --advantaclean-on-tertiary-light: #ffffff;
+  --advantaclean-tertiary-container-light: #dae2ff;
+  --advantaclean-on-tertiary-container-light: #0e1a37;
+  --advantaclean-error-light: #ba1a1a;
+  --advantaclean-on-error-light: #ffffff;
+  --advantaclean-error-container-light: #ffdad6;
+  --advantaclean-on-error-container-light: #410002;
+  --advantaclean-background-light: #fafcff;
+  --advantaclean-on-background-light: #191c1d;
+  --advantaclean-surface-light: #fafcff;
+  --advantaclean-on-surface-light: #191c1d;
+  --advantaclean-surface-variant-light: #dbe4e6;
+  --advantaclean-on-surface-variant-light: #3f484a;
+  --advantaclean-outline-light: #6f797a;
+  --advantaclean-surface-container-highest-light: #dde3e4;
+  --advantaclean-surface-container-high-light: #e2e8ea;
+  --advantaclean-surface-container-light: #e8eeef;
+  --advantaclean-surface-container-low-light: #eef4f5;
+  --advantaclean-surface-container-lowest-light: #ffffff;
+
+  /* --- Aussie Pet Mobile Theme --- */
+  --aussiepet-primary-light: #8c5100;
+  --aussiepet-on-primary-light: #ffffff;
+  --aussiepet-primary-container-light: #ffddb8;
+  --aussiepet-on-primary-container-light: #2d1600;
+  --aussiepet-secondary-light: #735a42;
+  --aussiepet-on-secondary-light: #ffffff;
+  --aussiepet-secondary-container-light: #feddbf;
+  --aussiepet-on-secondary-container-light: #291806;
+  --aussiepet-tertiary-light: #5a633a;
+  --aussiepet-on-tertiary-light: #ffffff;
+  --aussiepet-tertiary-container-light: #dee8b5;
+  --aussiepet-on-tertiary-container-light: #181e01;
+  --aussiepet-error-light: #ba1a1a;
+  --aussiepet-on-error-light: #ffffff;
+  --aussiepet-error-container-light: #ffdad6;
+  --aussiepet-on-error-container-light: #410002;
+  --aussiepet-background-light: #fff8f4;
+  --aussiepet-on-background-light: #1f1b17;
+  --aussiepet-surface-light: #fff8f4;
+  --aussiepet-on-surface-light: #1f1b17;
+  --aussiepet-surface-variant-light: #f2e0d1;
+  --aussiepet-on-surface-variant-light: #50453a;
+  --aussiepet-outline-light: #837468;
+  --aussiepet-surface-container-highest-light: #ebe0d7;
+  --aussiepet-surface-container-high-light: #f1e5dd;
+  --aussiepet-surface-container-light: #f6eadf;
+  --aussiepet-surface-container-low-light: #fcf1e9;
+  --aussiepet-surface-container-lowest-light: #ffffff;
+
+  /* --- Bath Tune-Up Theme --- */
+  --bathtuneup-primary-light: #00668a;
+  --bathtuneup-on-primary-light: #ffffff;
+  --bathtuneup-primary-container-light: #c4e7ff;
+  --bathtuneup-on-primary-container-light: #001e2c;
+  --bathtuneup-secondary-light: #4e616d;
+  --bathtuneup-on-secondary-light: #ffffff;
+  --bathtuneup-secondary-container-light: #d2e5f4;
+  --bathtuneup-on-secondary-container-light: #0a1e28;
+  --bathtuneup-tertiary-light: #615a7d;
+  --bathtuneup-on-tertiary-light: #ffffff;
+  --bathtuneup-tertiary-container-light: #e7deff;
+  --bathtuneup-on-tertiary-container-light: #1d1736;
+  --bathtuneup-error-light: #ba1a1a;
+  --bathtuneup-on-error-light: #ffffff;
+  --bathtuneup-error-container-light: #ffdad6;
+  --bathtuneup-on-error-container-light: #410002;
+  --bathtuneup-background-light: #f8f9ff;
+  --bathtuneup-on-background-light: #191c1f;
+  --bathtuneup-surface-light: #f8f9ff;
+  --bathtuneup-on-surface-light: #191c1f;
+  --bathtuneup-surface-variant-light: #dde3ea;
+  --bathtuneup-on-surface-variant-light: #41484d;
+  --bathtuneup-outline-light: #71787e;
+  --bathtuneup-surface-container-highest-light: #e0e2e8;
+  --bathtuneup-surface-container-high-light: #e6e8ed;
+  --bathtuneup-surface-container-light: #eceef3;
+  --bathtuneup-surface-container-low-light: #f2f4f9;
+  --bathtuneup-surface-container-lowest-light: #ffffff;
+
+  /* --- Budget Blinds Theme --- */
+  --budgetblinds-primary-light: #725c1a;
+  --budgetblinds-on-primary-light: #ffffff;
+  --budgetblinds-primary-container-light: #fddf91;
+  --budgetblinds-on-primary-container-light: #251a00;
+  --budgetblinds-secondary-light: #6a5f41;
+  --budgetblinds-on-secondary-light: #ffffff;
+  --budgetblinds-secondary-container-light: #f3e3bd;
+  --budgetblinds-on-secondary-container-light: #241b05;
+  --budgetblinds-tertiary-light: #46664a;
+  --budgetblinds-on-tertiary-light: #ffffff;
+  --budgetblinds-tertiary-container-light: #c8ecc8;
+  --budgetblinds-on-tertiary-container-light: #02210c;
+  --budgetblinds-error-light: #ba1a1a;
+  --budgetblinds-on-error-light: #ffffff;
+  --budgetblinds-error-container-light: #ffdad6;
+  --budgetblinds-on-error-container-light: #410002;
+  --budgetblinds-background-light: #fffaf4;
+  --budgetblinds-on-background-light: #1e1c17;
+  --budgetblinds-surface-light: #fffaf4;
+  --budgetblinds-on-surface-light: #1e1c17;
+  --budgetblinds-surface-variant-light: #ede2cf;
+  --budgetblinds-on-surface-variant-light: #4c4639;
+  --budgetblinds-outline-light: #7e7768;
+  --budgetblinds-surface-container-highest-light: #e7e2da;
+  --budgetblinds-surface-container-high-light: #ede7e0;
+  --budgetblinds-surface-container-light: #f3ede6;
+  --budgetblinds-surface-container-low-light: #f8f3ec;
+  --budgetblinds-surface-container-lowest-light: #ffffff;
+
+  /* --- Concrete Craft Theme --- */
+  --concretecraft-primary-light: #686054;
+  --concretecraft-on-primary-light: #ffffff;
+  --concretecraft-primary-container-light: #f1e4d5;
+  --concretecraft-on-primary-container-light: #221c13;
+  --concretecraft-secondary-light: #665f57;
+  --concretecraft-on-secondary-light: #ffffff;
+  --concretecraft-secondary-container-light: #eee3d9;
+  --concretecraft-on-secondary-container-light: #211c16;
+  --concretecraft-tertiary-light: #5f6450;
+  --concretecraft-on-tertiary-light: #ffffff;
+  --concretecraft-tertiary-container-light: #e4e9d0;
+  --concretecraft-on-tertiary-container-light: #1b1f10;
+  --concretecraft-error-light: #ba1a1a;
+  --concretecraft-on-error-light: #ffffff;
+  --concretecraft-error-container-light: #ffdad6;
+  --concretecraft-on-error-container-light: #410002;
+  --concretecraft-background-light: #fcf9f7;
+  --concretecraft-on-background-light: #1d1c1a;
+  --concretecraft-surface-light: #fcf9f7;
+  --concretecraft-on-surface-light: #1d1c1a;
+  --concretecraft-surface-variant-light: #ebe3db;
+  --concretecraft-on-surface-variant-light: #4a4641;
+  --concretecraft-outline-light: #7b7771;
+  --concretecraft-surface-container-highest-light: #e5e1dc;
+  --concretecraft-surface-container-high-light: #ebe7e2;
+  --concretecraft-surface-container-light: #f0ede7;
+  --concretecraft-surface-container-low-light: #f6f3ee;
+  --concretecraft-surface-container-lowest-light: #ffffff;
+
+  /* --- Kitchen Tune-Up Theme --- */
+  --kitchentuneup-primary-light: #825500;
+  --kitchentuneup-on-primary-light: #ffffff;
+  --kitchentuneup-primary-container-light: #ffddae;
+  --kitchentuneup-on-primary-container-light: #291800;
+  --kitchentuneup-secondary-light: #705c41;
+  --kitchentuneup-on-secondary-light: #ffffff;
+  --kitchentuneup-secondary-container-light: #faddbc;
+  --kitchentuneup-on-secondary-container-light: #271a05;
+  --kitchentuneup-tertiary-light: #53643e;
+  --kitchentuneup-on-tertiary-light: #ffffff;
+  --kitchentuneup-tertiary-container-light: #d6eabb;
+  --kitchentuneup-on-tertiary-container-light: #111f02;
+  --kitchentuneup-error-light: #ba1a1a;
+  --kitchentuneup-on-error-light: #ffffff;
+  --kitchentuneup-error-container-light: #ffdad6;
+  --kitchentuneup-on-error-container-light: #410002;
+  --kitchentuneup-background-light: #fff8f4;
+  --kitchentuneup-on-background-light: #1f1b16;
+  --kitchentuneup-surface-light: #fff8f4;
+  --kitchentuneup-on-surface-light: #1f1b16;
+  --kitchentuneup-surface-variant-light: #f0e0cf;
+  --kitchentuneup-on-surface-variant-light: #4f4539;
+  --kitchentuneup-outline-light: #817567;
+  --kitchentuneup-surface-container-highest-light: #eae0d5;
+  --kitchentuneup-surface-container-high-light: #f0e6db;
+  --kitchentuneup-surface-container-light: #f6ecdf;
+  --kitchentuneup-surface-container-low-light: #fbf2e9;
+  --kitchentuneup-surface-container-lowest-light: #ffffff;
+
+  /* --- Lightspeed Restoration Theme --- */
+  --lightspeed-primary-light: #ffffff;
+  --lightspeed-on-primary-light: #0677a3;
+  --lightspeed-primary-container-light: #FFFFFF;
+  --lightspeed-on-primary-container-light: #FFFFFF;
+  --lightspeed-secondary-light: #0677a3;
+  --lightspeed-on-secondary-light: #0677a3;
+  --lightspeed-secondary-container-light: #ffffff;
+  --lightspeed-on-secondary-container-light: #0677a3;
+  --lightspeed-tertiary-light: #ffffff;
+  --lightspeed-on-tertiary-light: #ffffff;
+  --lightspeed-tertiary-container-light: #0677a3;
+  --lightspeed-on-tertiary-container-light: #ffffff;
+  --lightspeed-error-light: #0677a3;
+  --lightspeed-on-error-light: #ffffff;
+  --lightspeed-error-container-light: #0677a3;
+  --lightspeed-on-error-container-light: #0677a3;
+  --lightspeed-background-light: #ffffff;
+  --lightspeed-on-background-light: #0677a3;
+  --lightspeed-surface-light: #0677a3;
+  --lightspeed-on-surface-light: #ffffff;
+  --lightspeed-surface-variant-light: #FFFFFD;
+  --lightspeed-on-surface-variant-light: #FFFFFF;
+  --lightspeed-outline-light: #ffffff;
+  --lightspeed-surface-container-highest-light: #0677a3;
+  --lightspeed-surface-container-high-light: #0677a3;
+  --lightspeed-surface-container-light: #ffffff;
+  --lightspeed-surface-container-low-light: #0677a3;
+  --lightspeed-surface-container-lowest-light: #FFFFFF;
+
+  /* --- PremierGarage Theme --- */
+  --premiergarage-primary-light: #515f70;
+  --premiergarage-on-primary-light: #ffffff;
+  --premiergarage-primary-container-light: #d5e3f7;
+  --premiergarage-on-primary-container-light: #0d1c2b;
+  --premiergarage-secondary-light: #8c261f;
+  --premiergarage-on-secondary-light: #ffffff;
+  --premiergarage-secondary-container-light: #ffdad6;
+  --premiergarage-on-secondary-container-light: #410002;
+  --premiergarage-tertiary-light: #755a7e;
+  --premiergarage-on-tertiary-light: #ffffff;
+  --premiergarage-tertiary-container-light: #fdd7ff;
+  --premiergarage-on-tertiary-container-light: #2d1637;
+  --premiergarage-error-light: #ba1a1a;
+  --premiergarage-on-error-light: #ffffff;
+  --premiergarage-error-container-light: #ffdad6;
+  --premiergarage-on-error-container-light: #410002;
+  --premiergarage-background-light: #f8f9fc;
+  --premiergarage-on-background-light: #191c1e;
+  --premiergarage-surface-light: #f8f9fc;
+  --premiergarage-on-surface-light: #191c1e;
+  --premiergarage-surface-variant-light: #dee3eb;
+  --premiergarage-on-surface-variant-light: #42474e;
+  --premiergarage-outline-light: #72777f;
+  --premiergarage-surface-container-highest-light: #e1e2e6;
+  --premiergarage-surface-container-high-light: #e7e8ec;
+  --premiergarage-surface-container-light: #edeeef;
+  --premiergarage-surface-container-low-light: #f2f3f7;
+  --premiergarage-surface-container-lowest-light: #ffffff;
+
+  /* --- The Tailored Closet Theme --- */
+  --tailoredcloset-primary-light: #6b5778;
+  --tailoredcloset-on-primary-light: #ffffff;
+  --tailoredcloset-primary-container-light: #f2daff;
+  --tailoredcloset-on-primary-container-light: #251431;
+  --tailoredcloset-secondary-light: #685d6f;
+  --tailoredcloset-on-secondary-light: #ffffff;
+  --tailoredcloset-secondary-container-light: #efdff7;
+  --tailoredcloset-on-secondary-container-light: #231a29;
+  --tailoredcloset-tertiary-light: #805539;
+  --tailoredcloset-on-tertiary-light: #ffffff;
+  --tailoredcloset-tertiary-container-light: #ffdbbf;
+  --tailoredcloset-on-tertiary-container-light: #311300;
+  --tailoredcloset-error-light: #ba1a1a;
+  --tailoredcloset-on-error-light: #ffffff;
+  --tailoredcloset-error-container-light: #ffdad6;
+  --tailoredcloset-on-error-container-light: #410002;
+  --tailoredcloset-background-light: #fff7fb;
+  --tailoredcloset-on-background-light: #1e1b1e;
+  --tailoredcloset-surface-light: #fff7fb;
+  --tailoredcloset-on-surface-light: #1e1b1e;
+  --tailoredcloset-surface-variant-light: #ebe0ec;
+  --tailoredcloset-on-surface-variant-light: #4b454d;
+  --tailoredcloset-outline-light: #7c757e;
+  --tailoredcloset-surface-container-highest-light: #e5e0e6;
+  --tailoredcloset-surface-container-high-light: #ebe6eb;
+  --tailoredcloset-surface-container-light: #f1ecf1;
+  --tailoredcloset-surface-container-low-light: #f6f2f7;
+  --tailoredcloset-surface-container-lowest-light: #ffffff;
+
+  /* --- Two Maids Theme --- */
+  --twomaids-primary-light: #b90063;
+  --twomaids-on-primary-light: #ffffff;
+  --twomaids-primary-container-light: #ffd8e7;
+  --twomaids-on-primary-container-light: #3e001d;
+  --twomaids-secondary-light: #006874;
+}
+
+/* Global Resets & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--theme-background-light);
+  color: var(--theme-on-background-light);
+  line-height: 1.6;
+  font-size: 16px;
+  margin-top: 70px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header / Top App Bar */
+.top-app-bar {
+  background-color: var(--theme-surface-light);
+  color: var(--theme-on-surface-light);
+  padding: 8px 0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: 70px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-app-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--theme-primary-light);
+  transition: color 0.3s ease;
+}
+
+.nav-links a {
+  color: var(--theme-on-surface-variant-light);
+  text-decoration: none;
+  padding: 8px 12px;
+  margin: 0 8px;
+  border-radius: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: var(--theme-secondary-container-light);
+  color: var(--theme-on-secondary-container-light);
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--theme-on-surface-variant-light);
+  transition: color 0.3s ease;
+}
+
+/* Buttons */
+button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filled-button {
+  background-color: var(--theme-primary-light);
+  color: var(--theme-on-primary-light);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.2s ease;
+}
+.filled-button:hover {
+  background-color: color-mix(in srgb, var(--theme-primary-light) 90%, black);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+.outlined-button {
+  background-color: transparent;
+  color: var(--theme-primary-light);
+  border: 1px solid var(--theme-outline-light);
+  padding: 9px 23px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.outlined-button:hover {
+  background-color: color-mix(in srgb, var(--theme-primary-light) 8%, transparent);
+}
+
+.filled-tonal-button {
+  background-color: var(--theme-primary-container-light);
+  color: var(--theme-on-primary-container-light);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.2s ease;
+}
+.filled-tonal-button:hover {
+  background-color: color-mix(in srgb, var(--theme-primary-container-light) 90%, black);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+.icon-button {
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--theme-on-surface-variant-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.icon-button:hover {
+  background-color: color-mix(in srgb, var(--theme-on-surface-light) 8%, transparent);
+}
+
+.large-button {
+  padding: 12px 32px;
+  font-size: 16px;
+  border-radius: 24px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--theme-primary-container-light);
+  color: var(--theme-on-primary-container-light);
+  padding: 64px 0;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-section h1 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+
+.hero-section p {
+  font-size: 22px;
+  margin-bottom: 24px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-section button {
+  margin: 8px;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 48px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content-section h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--theme-primary-light);
+  margin-bottom: 24px;
+  transition: color 0.3s ease;
+}
+
+.content-section p {
+  margin-bottom: 16px;
+  max-width: 800px;
+}
+
+/* Alternating Section Backgrounds */
+.surface-container-highest {
+  background-color: var(--theme-surface-container-highest-light);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--theme-surface-variant-light);
+  color: var(--theme-on-surface-variant-light);
+  padding: 24px 0;
+  text-align: center;
+  margin-top: 32px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer a {
+  color: var(--theme-on-surface-variant-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: var(--theme-primary-light);
+}
+
+/* Form basic styling */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--theme-on-surface-variant-light);
+  transition: color 0.3s ease;
+}
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 16px;
+  border: 1px solid var(--theme-outline-light);
+  border-radius: 4px;
+  background-color: var(--theme-surface-light);
+  color: var(--theme-on-surface-light);
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  outline: 2px solid var(--theme-primary-light);
+  border-color: var(--theme-primary-light);
+}
+
+/* Brand Switcher */
+.brand-switcher {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 101;
+}
+
+.brand-switcher-toggle {
+  background-color: var(--theme-surface-container-high-light);
+  color: var(--theme-primary-light);
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.brand-switcher-toggle:hover {
+  box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+.brand-switcher-toggle svg path[opacity=".3"] {
+    opacity: 1; 
+    fill: var(--theme-primary-container-light);
+    transition: fill 0.3s ease;
+}
+
+.brand-menu {
+  position: absolute;
+  bottom: 100%; 
+  right: 0;
+  margin-bottom: 8px;
+  background-color: var(--theme-surface-container-light);
+  color: var(--theme-on-surface-container-light);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+  padding: 8px 0;
+  min-width: 250px;
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.brand-menu.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.brand-menu ul {
+  list-style: none;
+}
+
+.brand-menu li a {
+  display: block;
+  padding: 8px 16px;
+  color: var(--theme-on-surface-container-light);
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.3s ease;
+}
+
+.brand-menu li a:hover {
+  background-color: var(--theme-surface-container-high-light);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    margin-top: 60px;
+  }
+
+  .top-app-bar {
+    height: 60px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .menu-button {
+    display: inline-flex;
+  }
+
+  .hero-section h1 {
+    font-size: 26px;
+  }
+  .hero-section p {
+    font-size: 18px;
+  }
+
+  .content-section h2 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
+
+  .hero-section button {
+    display: block;
+    width: 80%;
+    margin: 8px auto;
+  }
+}
