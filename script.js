@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // on a container or the navLinks element itself to show/hide it.
             console.log('Menu button clicked - Implement mobile navigation toggle.');
             // Example: navLinks.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            menuButton.classList.toggle('active'); // Toggle button state for icon change
         });
     }
 
@@ -109,6 +111,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Apply the default theme on initial load (using the actual default brand key)
     applyTheme('homefranchise');
+
+    // Credit Check Widget Logic
+    const creditCheckForm = document.getElementById('creditCheckForm');
+    const creditScoreResult = document.getElementById('creditScoreResult');
+
+    if (creditCheckForm && creditScoreResult) {
+        creditCheckForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent actual form submission
+
+            // Simulate a credit score (for demonstration purposes)
+            const simulatedScore = Math.floor(Math.random() * (850 - 600 + 1)) + 600; // Score between 600 and 850
+            creditScoreResult.textContent = `Your Simulated Credit Score: ${simulatedScore}`;
+            creditScoreResult.classList.add('active'); // Add class to show result with styling
+        });
+    }
 
     console.log("Home Franchise Corp site script loaded and initialized.");
 
