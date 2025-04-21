@@ -588,6 +588,74 @@ form input[type="email"]:focus {
   border-color: var(--theme-primary-light);
 }
 
+/* Credit Check Widget Styles */
+.credit-check-widget {
+  background-color: var(--theme-surface-container-light);
+  padding: 24px;
+  border-radius: 12px;
+  margin-top: 24px;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.credit-check-widget h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: var(--theme-secondary-light);
+}
+
+.credit-check-widget p {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.credit-check-widget label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--theme-on-surface-variant-light);
+}
+
+.credit-check-widget input[type="text"],
+.credit-check-widget input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid var(--theme-outline-light);
+  border-radius: 4px;
+  background-color: var(--theme-surface-light);
+  color: var(--theme-on-surface-light);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.credit-check-widget input[type="text"]:focus,
+.credit-check-widget input[type="email"]:focus {
+  outline: 2px solid var(--theme-primary-light);
+  border-color: var(--theme-primary-light);
+}
+
+.credit-score-result {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: var(--theme-secondary-container-light);
+  color: var(--theme-on-secondary-container-light);
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  display: none; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.credit-score-result.active {
+    display: block; 
+}
+
+.credit-check-widget .disclaimer {
+  font-size: 12px;
+  color: var(--theme-on-surface-variant-light);
+  margin-top: 8px;
+}
+
 /* Brand Switcher */
 .brand-switcher {
   position: fixed;
@@ -663,9 +731,45 @@ form input[type="email"]:focus {
 
   .nav-links {
     display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--theme-surface-light);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--theme-outline-light);
+    z-index: 99; /* Ensure it's below the top app bar but above other content */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
   }
+
+  .nav-links.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 20px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
   .menu-button {
     display: inline-flex;
+  }
+
+  .menu-button.active svg {
+    transform: rotate(90deg); /* Example: Rotate the icon when the menu is active */
+    transition: transform 0.3s ease; /* Smooth rotation */
   }
 
   .hero-section h1 {
@@ -687,5 +791,19 @@ form input[type="email"]:focus {
     display: block;
     width: 80%;
     margin: 8px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .credit-check-widget {
+    padding: 16px;
+  }
+
+  .credit-check-widget h2 {
+    font-size: 18px;
+  }
+
+  .credit-check-widget p {
+    font-size: 13px;
   }
 }
