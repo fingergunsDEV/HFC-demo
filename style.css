@@ -241,12 +241,12 @@
   --kitchentuneup-surface-container-lowest-light: #ffffff;
 
   /* --- Lightspeed Restoration Theme --- */
-  --lightspeed-primary-light: #ffffff;
-  --lightspeed-on-primary-light: #0677a3;
+  --lightspeed-primary-light: #0677a3;
+  --lightspeed-on-primary-light: #ffffff;
   --lightspeed-primary-container-light: #FFFFFF;
   --lightspeed-on-primary-container-light: #FFFFFF;
   --lightspeed-secondary-light: #0677a3;
-  --lightspeed-on-secondary-light: #0677a3;
+  --lightspeed-on-secondary-light: #ffffff;
   --lightspeed-secondary-container-light: #ffffff;
   --lightspeed-on-secondary-container-light: #0677a3;
   --lightspeed-tertiary-light: #ffffff;
@@ -336,6 +336,29 @@
   --twomaids-primary-container-light: #ffd8e7;
   --twomaids-on-primary-container-light: #3e001d;
   --twomaids-secondary-light: #006874;
+  --twomaids-on-secondary-light: #ffffff;
+  --twomaids-secondary-container-light: #95f0ff;
+  --twomaids-on-secondary-container-light: #001f24;
+  --twomaids-tertiary-light: #535e7d;
+  --twomaids-on-tertiary-light: #ffffff;
+  --twomaids-tertiary-container-light: #dae2ff;
+  --twomaids-on-tertiary-container-light: #0e1a37;
+  --twomaids-error-light: #ba1a1a;
+  --twomaids-on-error-light: #ffffff;
+  --twomaids-error-container-light: #ffdad6;
+  --twomaids-on-error-container-light: #410002;
+  --twomaids-background-light: #fffbff;
+  --twomaids-on-background-light: #1b1b1f;
+  --twomaids-surface-light: #fffbff;
+  --twomaids-on-surface-light: #1b1b1f;
+  --twomaids-surface-variant-light: #e2e1ec;
+  --twomaids-on-surface-variant-light: #45464f;
+  --twomaids-outline-light: #767680;
+  --twomaids-surface-container-highest-light: #ececee;
+  --twomaids-surface-container-high-light: #f3f3f7;
+  --twomaids-surface-container-light: #f9f9fc;
+  --twomaids-surface-container-low-light: #fefeff;
+  --twomaids-surface-container-lowest-light: #ffffff;
 }
 
 /* Global Resets & Base Styles */
