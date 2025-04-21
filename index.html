@@ -40,6 +40,23 @@
                 <p>Join a network of successful entrepreneurs and bring top-quality home services to your community.</p>
                 <button class="filled-button large-button">Learn More</button>
                 <button class="outlined-button large-button">Franchise Info</button>
+
+                <!-- Credit Check Widget -->
+                <div class="credit-check-widget">
+                    <h2>Check Your Credit Score (No Impact!)</h2>
+                    <p>Find out if you prequalify for financing without affecting your credit score.</p>
+                    <form id="creditCheckForm">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+                        <button type="submit" class="filled-tonal-button">Check My Score</button>
+                    </form>
+                    <div id="creditScoreResult" class="credit-score-result">
+                        <!-- Credit score result will be displayed here -->
+                    </div>
+                    <p class="disclaimer">This is a simulation and does not represent an actual credit check.</p>
+                </div>
             </div>
         </section>
 
